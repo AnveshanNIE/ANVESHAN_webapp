@@ -1,0 +1,25 @@
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    text-align: center;
+    color: #b3b3b3;
+
+    .social-media {
+        margin-bottom: 20px;
+
+        a img {
+            width: 25px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+}

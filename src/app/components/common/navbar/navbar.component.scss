@@ -1,0 +1,69 @@
+// Define color variables for easier theme management
+$primary-bg: #111;
+$primary-text: #e0e0e0;
+$hover-text: #ffffff;
+$link-color: #b3b3b3;
+$font-family: 'Montserrat';
+
+body {
+    font-family: $font-family;
+    color: $primary-text;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: $primary-bg;
+
+    img {
+        width: 50px;
+        height: auto;
+        background-color: #ffffffce;
+        /* White background */
+        border-radius: 4px;
+        /* Rounded corners */
+        padding: 5px;
+        /* Optional: Add padding to avoid touching the border */
+        transition: all 0.3s ease;
+        /* Smooth transition for hover effect */
+    
+        &:hover {
+            background-color: #ffffff;
+            /* Slightly darker background on hover */
+            transform: scale(1.05);
+            /* Scale up the image slightly */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Add shadow on hover */
+        }
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        margin: 0;
+        padding-top: 26px;
+
+        li {
+            a {
+                color: $link-color;
+                text-decoration: none;
+                padding: 5px 15px;
+                font-weight: 500;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $hover-text;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+}
